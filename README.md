@@ -8,7 +8,7 @@ You can download the code and learn with me.
 If you want to give a feedback (support@indexfoundation.cf)
 
 ## Author
- - [@iFireIndex](https://github.com/iFireIndex)
+[@iFireIndex](https://github.com/iFireIndex)
 
 ## License
 [BSD 3-Clause License](LICENSE)
