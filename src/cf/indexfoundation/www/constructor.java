@@ -4,7 +4,7 @@ class Employee{
     int empId, empSalary;
     String empName;
     
-    Employee(int id, int salary, String name){      //Creating a new constructor with the name Employee
+    public Employee(int id, int salary, String name){      //Creating a new constructor with the name Employee
         this.empId = id;
         this.empSalary = salary;
         this.empName = name;

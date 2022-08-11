@@ -3,7 +3,7 @@ package cf.indexfoundation.www;
 class Reference{
     int number1, number2;
 
-    Reference(){        //Setting the base value to the variables in the constructor
+    public Reference(){        //Setting the base value to the variables in the constructor
         number1 = 10;
         number2 = 20;
     }
