@@ -21,7 +21,7 @@ public class generics {
         numberOfStudents<Integer> student1 = new numberOfStudents<Integer>(10);
         System.out.println("Initial number of students are: " +student1.getStudents());
 
-        student1.setStudents(16);
+        student1.setStudents(18);
         System.out.println("Final students are: " + student1.getStudents());
     }
 }
