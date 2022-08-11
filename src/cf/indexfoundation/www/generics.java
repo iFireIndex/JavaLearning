@@ -19,7 +19,7 @@ class numberOfStudents <ParamType>{     //Here the data type is Generic, so that
 public class generics {
     public static void main(String[] args) {
         numberOfStudents<Integer> student1 = new numberOfStudents<Integer>(10);
-        System.out.println("Initial number fo students are: " +student1.getStudents());
+        System.out.println("Initial number of students are: " +student1.getStudents());
 
         student1.setStudents(16);
         System.out.println("Final students are: " + student1.getStudents());
