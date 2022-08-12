@@ -6,7 +6,7 @@ class Dog{
 
     public Dog(){
         this.name = null;
-        this.age = 0;
+        this.age = -1;
     }
     public Dog(String name, int age) {      //This is a constructor
         this.name = name;
@@ -21,7 +21,7 @@ class Dog{
     }
 
     public int getAge() {
-        if (this.age == 0){
+        if (this.age == -1){
             System.out.println("You did not provide with any age of the dog.");
         }
         return age;
@@ -36,6 +36,13 @@ class Dog{
 public class objectAsParameters {
     public static void main(String[] args) {
         Dog dog1 = new Dog("Larry", 8);
+        Dog dog2 = new Dog();
+
+        //Display the result
         dog1.talk();
+        System.out.println("------------------------------------------");
+        dog2.talk();
+        System.out.println("------------------------------------------");
+        System.out.println("Name: " +dog2.getName()+ " Age: " +dog2.getAge());
     }
 }
