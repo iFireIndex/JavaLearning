@@ -5,7 +5,7 @@ import java.util.Scanner;
 class Discount{
     double discountAmount;
     double calculate(double x){
-        discountAmount = x - ((25.00/100.00)*x);
+        discountAmount = x - (x*(25.00 / 100.00));
         return discountAmount;
     }
 }
