@@ -5,37 +5,42 @@ import java.util.Scanner;
 public class techNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String string1, string2, string3;
-        int length, userInput, division, a, b, sum, square;
+        String mainString, string1, string2;
+        int length, userInput, a, b, sum, square;
 
-        System.out.println("----------------------");
-        System.out.println("Please Enter A Number");
-        System.out.println("----------------------");
+        System.out.println("|----------------------|");
+        System.out.println(" Please Enter A Number ");
+        System.out.println("|----------------------|");
 
-        string1 = scanner.nextLine();
+        mainString = scanner.nextLine();
         //Count the length of the user given number
-        length = string1.length();
+        length = mainString.length();
         //Convert user given input string number into actual int
-        userInput = Integer.parseInt(string1);
+        userInput = Integer.parseInt(mainString);
 
         if ((length % 2) == 0) {
-            division = 1/2;
-            string2 = string1.substring(0, division);
-            string3 = string1.substring(division, length);
+            double division = 0.5;
+            division = (division * length);
+            string1 = mainString.substring(0, (int) division);
+            string2 = mainString.substring((int) division, length);
 
-            a = Integer.parseInt(string2);
-            b = Integer.parseInt(string3);
+            a = Integer.parseInt(string1);
+            b = Integer.parseInt(string2);
 
             sum = (a + b);
             square = (sum * sum);
 
              if (userInput == square) {
-                 System.out.println(userInput + "Is a tech number");
+                 System.out.println("*******************************");
+                 System.out.println("    " + userInput + " Is A TECH Number    ");
+                 System.out.println("*******************************");
              } else {
-                 System.out.println(userInput + "Is not a tech number");
+                 System.out.println("*********************************");
+                 System.out.println("    " + userInput + " Is Not A TECH Number    ");
+                 System.out.println("*********************************");
              }
         } else{
-            System.out.println("Please enter a valid tech number");
+            System.out.println("Please Enter A 2, 4, 6, 8, 10 . . . Digit Number");
         }
     }
 }
