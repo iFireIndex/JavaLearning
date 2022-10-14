@@ -9,6 +9,8 @@ public class compositeNumber {
         System.out.println("Enter A Number To Check If It Is A Composite Number OR Not");
         userInput = scanner.nextInt(); // Input number from use
 
+        scanner.close();
+
         for (int i = 2; i < userInput; i++) {
             if (userInput % i == 0) {    // checking factors of the number
                 count++;

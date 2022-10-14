@@ -9,6 +9,8 @@ public class perfectNumber {
         System.out.println("Enter A Number To Check If It Is A Perfect OR Not");
         userInput = scanner.nextInt(); // Input number from user
 
+        scanner.close();
+
         for (int i = 1; i < userInput; i++) {   // loop t+ "It is not a Perfect Number : " o find the factors
             if(userInput % i == 0) {    // Condition for factors of number
                 sum = (sum+ i); // storing sum of factors excluding number
